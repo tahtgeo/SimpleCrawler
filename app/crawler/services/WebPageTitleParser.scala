@@ -6,10 +6,10 @@ import net.ruippeixotog.scalascraper.dsl.DSL.Extract._
 import net.ruippeixotog.scalascraper.dsl.DSL._
 import org.apache.commons.validator.routines.UrlValidator
 
-
 @ImplementedBy(classOf[WebPageTitleParserImpl])
 trait WebPageTitleParser {
   val PageTitleTag = "title"
+
   def fetchPageTitle(url: UrlString): Option[PageTitle]
 }
 

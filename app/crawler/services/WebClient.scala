@@ -1,6 +1,6 @@
 package crawler.services
 
-import com.google.inject.{ImplementedBy, Singleton}
+import com.google.inject.ImplementedBy
 import net.ruippeixotog.scalascraper.browser.JsoupBrowser
 import net.ruippeixotog.scalascraper.model.Document
 import org.jsoup.Connection
