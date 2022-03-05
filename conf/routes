@@ -1,4 +1,4 @@
 # Routes
 # This file defines all application routes (Higher priority routes first)
 
-POST    /crawl                      crawler.controllers.CrawlerController.crawl
+POST    /crawl                      crawler.CrawlerController.crawl

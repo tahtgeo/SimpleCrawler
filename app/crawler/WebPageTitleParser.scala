@@ -1,7 +1,6 @@
-package crawler.services
+package crawler
 
 import com.google.inject.{ImplementedBy, Inject, Singleton}
-import crawler.{PageTitle, UrlString}
 import net.ruippeixotog.scalascraper.dsl.DSL.Extract._
 import net.ruippeixotog.scalascraper.dsl.DSL._
 import org.apache.commons.validator.routines.UrlValidator
@@ -9,7 +8,6 @@ import org.apache.commons.validator.routines.UrlValidator
 @ImplementedBy(classOf[WebPageTitleParserImpl])
 trait WebPageTitleParser {
   val PageTitleTag = "title"
-
   def fetchPageTitle(url: UrlString): Option[PageTitle]
 }
 
